@@ -5,21 +5,23 @@ import com.devsuperior.dsmovie.entities.Movie;
 public class MovieDTO {
 
 	private Long id;
-
-	private Double score;
-	private Integer conut;
+	private Double score;    
+	private Integer count;
 	private String title;
 	private String image;
+	
+	
+	
 
 	public MovieDTO() {
 		super();
 	}
 
-	public MovieDTO(Long id, Double score, Integer conut, String title, String image) {
+	public MovieDTO(Long id, Double score, Integer count, String title, String image) {
 		super();
 		this.id = id;
 		this.score = score;
-		this.conut = conut;
+		this.count = count;
 		this.title = title;
 		this.image = image;
 	}
@@ -29,7 +31,7 @@ public class MovieDTO {
 		this.id = movie.getId();
 		this.title = movie.getTitle();
 		this.score = movie.getScore();
-		this.conut = movie.getConut();
+		this.count = movie.getCount();
 		this.image = movie.getImage();
 	}
 
@@ -49,12 +51,12 @@ public class MovieDTO {
 		this.score = score;
 	}
 
-	public Integer getConut() {
-		return conut;
+	public Integer getCount() {
+		return count;
 	}
 
-	public void setConut(Integer conut) {
-		this.conut = conut;
+	public void setCount(Integer count) {
+		this.count = count;
 	}
 
 	public String getTitle() {

@@ -3,9 +3,10 @@ package com.devsuperior.dsmovie.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.devsuperior.dsmovie.entities.User;
+import com.devsuperior.dsmovie.entities.Score;
+import com.devsuperior.dsmovie.entities.ScorePK;
+
 @Repository
-public interface UserRepository extends JpaRepository<User, Long>{
-  
-	User findByEmail(String email);
+public interface ScoreRepository extends JpaRepository<Score, ScorePK> {
+
 }
